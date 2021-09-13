@@ -33,11 +33,13 @@
         <!-- STAGE1問題セクション　ここから -->
         <section class="section">
           <div class="container">
-            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：1</span>警備ロボットからの逃走！</h2>
-            <p class="text-center">まずい、警備ロボットに見つかってしまった！追われる3人を助けるために<br>
-              警備ロボットをハッキングして停止させてみよう。だがそれにはパスワードが必要だ、<br>
-              パスワードを打つ画面に出てきたこの画像が謎を解く鍵になるかもしれない。<br>
-              下の画像の謎を解き、パスワードを入力するか。</p>
+            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：1</span>動かないエレベーター</h2>
+            <p class="text-center">早速3人はエレベーターに着いたがエレベーターが作動してないらしい<br>
+              作本が電気室に向かいブレーカーをあげようと提案したので電気室に向かった<br>
+              だが電気室には鍵が掛けられており暗証番号を入力しないと開けられないみたいだ<br>
+              小林がドアの前に紙が落ちていることに気がついた、そこには何やら暗号みたいなものが書いてあった<br>
+              これを解けばドアが開くかもしれない。<br>
+              下の画像の謎を解き、暗証番号を入力するか。</p>
             <p class="text-center">困ったときは、ヒントが聞ける。なるべくあいつらには頼りたくないけどな...</p>
             <div class="container">
               <figure class="image__container">
@@ -86,10 +88,10 @@ Youtube貼り付けここまで -->
           <div class="container">
             <div class="clear-message">
               <div class="clear-message__title">STAGE：１  クリア！</div>
-              <div class="clear-message__content">警備ロボットを停止することができた。<br>
-                まったく世話のかかる奴らだ<br>
-                さっさとエレベーターに乗ってもらおう</div>
-              <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">2階へ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
+              <div class="clear-message__content">電気室のドアが開いた<br>
+                エレベーターのブレーカーを上げて<br>
+                すぐにエレベーターに向かおう</div>
+              <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">エレベーターへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
         </section>
@@ -166,7 +168,7 @@ Youtube貼り付けここまで -->
                   </figure>
 
                   <answer-input v-bind:correct="correctAnswer['stage2']['q3']" v-on:answer-input="answerInput($event, 'stage2', 3)"></answer-input>
-                  <a class="link-hint" href="hint2.html" target="hint2">ヒントをみる ></a>
+                  <a class="link-hint" href="hint2.html" target="hint2">ヒントを聞く ></a>
 
                 </div>
 
@@ -186,7 +188,7 @@ Youtube貼り付けここまで -->
               <div class="clear-message__content">警備ロボットを停止することができた。<br>
                 まったく世話のかかる奴らだ<br>                
                 さっさとエレベーターに乗ってもらおう</div>
-                <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
+                <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn">2階へ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
         </section>
